@@ -2,7 +2,7 @@ import { Models, Query } from "appwrite";
 import { account, databases, DATABASE_ID, TX_COLLECTION_ID } from "./appwrite_config";
 
 export type TxDoc = Models.Document & {
-  userId: string;                // ✅ ชื่อคีย์ให้ตรง DB
+  userId: string;                
   type: "income" | "spend";
   amount: number;                // Double
   date: string;                  // ISO string
